@@ -4,3 +4,5 @@ test/
 parcel_bundle_reports/
 .idea/
 .parcel-cache/
+.editorconfig
+.tsconfig

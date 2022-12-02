@@ -1,10 +1,10 @@
 {
     "name": "@skaaala/advent-of-code",
-    "version": "1.0.11",
+    "version": "1.0.13",
     "source": "src/index.ts",
-    "main": "dist/main.js",
-    "module": "dist/esm/main.js",
-    "types": "dist/types.d.ts",
+    "main": "lib/main.js",
+    "module": "lib/esm/main.js",
+    "types": "lib/types.d.ts",
     "scripts": {
         "watch": "parcel watch",
         "build": "parcel build --no-cache",
