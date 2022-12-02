@@ -1,13 +1,14 @@
 {
     "name": "@skaaala/advent-of-code",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "source": "src/index.ts",
     "main": "dist/main.js",
     "module": "dist/esm/main.js",
     "types": "dist/types.d.ts",
     "scripts": {
         "watch": "parcel watch",
-        "build": "parcel build --no-cache"
+        "build": "parcel build --no-cache",
+        "publish": "npm publish --access public"
     },
     "devDependencies": {
         "@parcel/packager-ts": "2.8.0",

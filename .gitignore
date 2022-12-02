@@ -1,6 +1,7 @@
 # compiled output
 **/dist
 **/node_modules
+**/parcel-bundle-reports
 
 # OS
 .DS_Store
