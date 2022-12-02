@@ -1,0 +1,19 @@
+# compiled output
+**/dist
+**/node_modules
+
+# OS
+.DS_Store
+
+# Parcel
+**/.parcel-cache
+
+# IDEs and editors
+/.idea
+.vscode
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace

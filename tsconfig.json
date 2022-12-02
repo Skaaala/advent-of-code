@@ -1,0 +1,10 @@
+{
+    "include": ["src/**/*.ts"],
+    "compilerOptions": {
+        "target": "es2020",
+        "dom": ["es2020"],
+        "types": ["node"],
+        "esModuleInterop": true
+    },
+    "exclude": ["node_modules", "dist"],
+}
