@@ -34,13 +34,13 @@ const LOST_COMBINATIONS: string[] = [
 export class Day02 implements BaseDay {
 
     partOne(): number {
-        const data = this.getInput2DArray();
+        const data = this.getInput();
 
         return data.reduce((total, round) => total + this.gameRoundResult(round[0] as OpponentTurn, round[1] as MyTurn), 0);
     }
 
     partTwo(): number {
-        const data = this.getInput2DArray();
+        const data = this.getInput();
         let newRound;
         return data.reduce((total, round) => {
             newRound = this.chooseCorrectCombination(round[0] as OpponentTurn, round[1] as HowTurnShouldEnd);
@@ -80,7 +80,7 @@ export class Day02 implements BaseDay {
         return newTurn?.split('') as [OpponentTurn, MyTurn] || undefined;
     }
 
-    private getInput2DArray(): string[][] {
+    private getInput(): string[][] {
         return input.split('\n')
             .filter(Boolean)
             .map(item => item.split(' '));

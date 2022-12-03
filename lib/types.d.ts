@@ -1,6 +1,6 @@
-declare abstract class BaseDay {
-    abstract partOne(): number;
-    abstract partTwo(): number;
+interface BaseDay {
+    partOne(): number;
+    partTwo(): number;
 }
 export class Day01 implements BaseDay {
     partOne(): number;
@@ -30,5 +30,16 @@ export class Day02 implements BaseDay {
     partOne(): number;
     partTwo(): number;
 }
+export enum ASCII {
+    a = 97,
+    z = 122,
+    A = 65,
+    Z = 90
+}
+export class Day03 implements BaseDay {
+    partOne(): number;
+    partTwo(): number;
+}
+export function main(): void;
 
 //# sourceMappingURL=types.d.ts.map

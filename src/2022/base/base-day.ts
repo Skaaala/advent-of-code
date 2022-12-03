@@ -1,4 +1,4 @@
-export abstract class BaseDay {
-    abstract partOne(): number;
-    abstract partTwo(): number;
+export interface BaseDay {
+    partOne(): number;
+    partTwo(): number;
 }

@@ -1,6 +1,6 @@
 {
     "name": "@skaaala/advent-of-code",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "source": "src/index.ts",
     "main": "lib/main.js",
     "module": "lib/esm/main.js",

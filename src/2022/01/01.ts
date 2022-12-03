@@ -4,14 +4,14 @@ import { input } from './input';
 export class Day01 implements BaseDay {
 
     partOne(): number {
-        const data = this.getInput2DArray();
+        const data = this.getInput();
 
         // find max
         return Math.max(...data.map(row => row.reduce((a, b) => a + b, 0)));
     }
 
     partTwo(): number {
-        const data = this.getInput2DArray();
+        const data = this.getInput();
 
         // find max
         return data.map(row =>
@@ -20,7 +20,7 @@ export class Day01 implements BaseDay {
                 .splice(-3).reduce((a, b) => a + b, 0);
     }
 
-    private getInput2DArray(): number[][] {
+    private getInput(): number[][] {
         return input.split('\n\n')
             .map(row =>
                 row.replace(/\n/gmi, ' ')
